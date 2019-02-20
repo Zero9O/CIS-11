@@ -1,0 +1,77 @@
+1.1.3 Section Review 
+
+1.How do assemblers and linkers work together? 
+Assemblers convert source code programs from assembly language into machine language and linkers take those files and combine them into a single executable program. 
+
+3. What is meant by one-to-many relationship when comparing a high-level language to machine language? 
+One-to-many relationship means that a single statement from a high-level language expands into multiple assembly language or machine instructions. 
+
+8. Do you suppose type checking on pointer variables is stronger (stricter) in assembly language, or in C or C++? 
+Type checking is stronger in C or C++ because they use syntax rules to reduce unintended logic errors. 
+
+12. Challenge: Translate the following C++ expression to assembly language, using the example presented earlier in this chapter as a guide: X = (Y * 4) + 3. 
+mov eax, Y 
+mov ebx 4 
+imul ebx 
+add eax, 3
+mov X,eax
+
+
+1.2.1 Section Review 
+
+2. Why do you suppose translated programs often execute more quickly than interpreted ones? 
+
+
+3. (True/False): When an interpreted program written in language L1 runs, each of its instructions is decoded and executed by a program written in Language L0. 
+
+10. Statements at the assembly language level of a virtual machine are translated into statements at which other level? 
+
+ 
+
+1.3.9 Section Review 
+
+2. What is the decimal representation of each of the following unsigned binary integers? 
+
+11111000 
+
+11001010 
+
+11110000 
+
+3. What is the sum of each pair of binary integers? (In binary) 
+
+00001111 + 00000010 
+
+11010101 + 01101011 
+
+00001111 + 00001111 
+
+5. What is the minimum number of binary bits needed to represen each of the following unsigned decimal integers? 
+
+65 
+
+409 
+
+16385 
+
+6. What is the hexadecimal representation of each of the following binary numbers? 
+
+0011 0101 1101 1010 
+
+1100 1110 1010 0011 
+
+1111 1110 1101 1011 
+
+7. What is the binary representation of the following hexadecimal numbers? 
+
+A4693FBC 
+
+B697C7A1 
+
+2B3D9461 
+
+ 
+
+1.7.1 Short Answer 
+
+ 
