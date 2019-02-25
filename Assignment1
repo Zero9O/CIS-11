@@ -20,9 +20,10 @@ mov X,eax
 1.2.1 Section Review 
 
 2. Why do you suppose translated programs often execute more quickly than interpreted ones? 
-
+Translated programs are converted first and then exectued which allows it to run uninterrupted.
 
 3. (True/False): When an interpreted program written in language L1 runs, each of its instructions is decoded and executed by a program written in Language L0. 
+
 
 10. Statements at the assembly language level of a virtual machine are translated into statements at which other level? 
 
