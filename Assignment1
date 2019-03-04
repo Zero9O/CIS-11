@@ -124,14 +124,14 @@ b. -331 = EB5
  b. 8230 = -32208
 
 15. What is the decimal representation of each of the following signed binary numbers? 
- a. 10110101 = 32 + 16 + 4 + 2 = -53
- b. 00101010 
- c. 11110000 
+ a. 10110101 = -75
+ b. 00101010 = 42
+ c. 11110000 = -16
 
 16. What is the decimal representation of each of the following signed binary numbers? 
- a. 10000000 
- b. 11001100 
- c. 10110111 
+ a. 10000000 = -128
+ b. 11001100 = -52
+ c. 10110111 = -73
 
 17. What is the 8-bit binary (two’s-complement) representation of each of the following signed decimal integers? 
  a. -5
