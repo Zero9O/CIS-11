@@ -74,7 +74,7 @@
  c.  01110101 + 10101100 = 00100001
  
 4. Calculate binary 00001101 minus 00000111.
- 00001101 - 00000111 = 00000110
+ 00001101 + 111111001 = 00000110
 
 5. How many bits are used by each of the following data types? 
  a. word = 16
@@ -134,7 +134,7 @@ b. -331 = EB5
  c. 10110111 = -73
 
 17. What is the 8-bit binary (two’s-complement) representation of each of the following signed decimal integers? 
- a. -5
+ a. -5 = 1
  b. -42
  c. -16
 
