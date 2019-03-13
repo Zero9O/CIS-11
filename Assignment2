@@ -1,19 +1,19 @@
 2.1.5 Section Review
 
 1. The central processor unit (CPU) contains registers and what other basic elements? 
-  
+  High-frequency clock, control unit, and an arithmetic logic unit
 
 2. The central processor unit is connected to the rest of the computer system using what three buses? 
-
+  Data bus, control bus, and address bus
 
 3. Why does memory access take more machine cycles than register access? 
-
+  Instructions requiring memory access often have empty clock cycles called wait states because of the differences in the speeds of the CPU, the system bus, and memory cicruits.
 
 4. What are the three basic steps in the instruction execution cycle? 
-
+  Fetch, decode, and Execute
 
 5. Which two additional steps are required in the instruction execution cycle when a memory operand is used?
-
+  
 
 
 2.4.3 Section Review
