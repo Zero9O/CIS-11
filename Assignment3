@@ -48,6 +48,7 @@ myArray WORD 20 DUP(?)
 3.9.2 Algorithm Workbench, Questions 4, 7, 13
 
 4. Find out if you can declare a variable of type DWORD and assign it a negative value. What does this tell you about the assembler’s type checking? 
+  It doesn't type check
 7. Declare an array of 120 uninitialized unsigned doubleword values. 
 13. Declare a string variable containing the word “TEST” repeated 500 times.
 
