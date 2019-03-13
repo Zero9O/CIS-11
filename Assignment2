@@ -13,33 +13,33 @@
   Fetch, decode, and Execute
 
 5. Which two additional steps are required in the instruction execution cycle when a memory operand is used?
-  
+  Fetch and store memory operands
 
 
 2.4.3 Section Review
 
 5. What is the purpose of the 8259A PIC controller?
-
+  Handle external interrupts from hardware devices such as keyboard, system clock, and disk drives
 
 2.5.2 Section Review
 
 1. Of the four levels of input/output in a computer system, which is the most universal and portable? 
-
+  The application program level
 
 3. Why are device drivers necessary, given that the BIOS already has code that communicates with the computer’s hardware? 
-
+  The device might be capable of things the BIOS wasn't anticipating when it was written
 
 4. In the example regarding displaying a string of characters, which level exists between the operating system and the video controller card?
-
+  BIOS level
 
 5. Is it likely that the BIOS for a computer running MS-Windows would be different from that used by a computer running Linux? 
-
+  No, the same BIOS would work for both OS unless onr computer was using a different motherboard
 
 
 2.8 Review Questions
 
 7. Which part of the CPU performs ﬂoating-point arithmetic? 
-
+  
 
 8. On a 32-bit processor, how many bits are contained in each ﬂoating-point data register? 
 
