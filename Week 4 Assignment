@@ -1,10 +1,26 @@
 4.2.8 Section Review, Questions 1, 2, 3, 4, 5, 6	
 
-1.  What will be the value in EDX after each of the lines marked (a) and (b) execute?
-  a. 
+1. 1. Write an instruction that increments val2. 
+  inc val2
+
+2. Write an instruction that subtracts val3 from EAX.
+  sub eax,val3
+
+3. Write instructions that subtract val4 from val2. 
+  sub val2,val4
+
+4. If val2 is incremented by 1 using the ADD instruction, what will be the values of the Carry and Sign ﬂags?
+  Carry Flag = 0
+  Sign Flag = 0
+
+5. If val4 is incremented by 1 using the ADD instruction, what will be the values of the Overﬂow and Sign ﬂags? 
+  Overflow Flag = 0
+  Sign Flag = 0
+
+6. Where indicated, write down the values of the Carry, Sign, Zero, and Overﬂow ﬂags after each instruction has executed:
+
 
 
 4.3.8 Section Review, Questions 1,2,3,4,5
 4.4.5 Section Review, Questions 4,5
 4.10 Programming Exercises, Question 7
-
