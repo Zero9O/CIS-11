@@ -67,8 +67,8 @@
 3.5.5 Section Review Question 3
 
 3. Write a statement that causes the assembler to calculate the number of bytes in the following array, and assign the value to a symbolic constant named ArraySize:
-myArray WORD 20 DUP(?)
-
+  myArray WORD 20 DUP(?)
+  ArraySize = ($ - myArray)
 
 3.9.1 Short Answer, Questions 4, 5, 6, 25
 
