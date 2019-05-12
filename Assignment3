@@ -81,7 +81,7 @@
   Big endian orders data from high to low while little-endian orders data from low to high.
 
 6. Why might you use a symbolic constant rather than an integer literal in your code? 
-  Symbolic constants don't reserve storage and they make programs easier to read and maintain.
+  Symbolic constants don't reserve storage and if a symbolic constant is used multiple times in a program all you have to do is redefine it's value and it affects every instance of it making programs easier to read and maintain.
 
 25. Which data directive creates a 32-bit signed integer variable? 
   SDWORD
@@ -95,10 +95,12 @@
   It doesn't type check.
   
 7. Declare an array of 120 uninitialized unsigned doubleword values. 
-  
+  .data?
+  anArray DWORD 120 DUP(?)
 
 13. Declare a string variable containing the word “TEST” repeated 500 times.
-
+  .data
+  sArray BYTE 500 DUP("TEST")
 
 
 
