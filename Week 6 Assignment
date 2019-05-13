@@ -18,9 +18,55 @@
   Sign Flag = 0
 
 6. Where indicated, write down the values of the Carry, Sign, Zero, and Overﬂow ﬂags after each instruction has executed:
+  mov ax,7FF0h 
+  add al,10h ; a. CF =  1  SF =  0  ZF =  0  OF = 1
+  add ah,1 ; b. CF =  0  SF =    ZF =    OF = 
+  add ax,2 ; c. CF =    SF =    ZF =    OF = 
 
 
 
 4.3.8 Section Review, Questions 1,2,3,4,5
+
+
+1. (True/False): The OFFSET operator always returns a 16-bit value. 
+
+
+2. (True/False): The PTR operator returns the 32-bit address of a variable. 
+
+
+3. (True/False): The TYPE operator returns a value of 4 for doubleword operands. 
+
+
+4. (True/False): The LENGTHOF operator returns the number of bytes in an operand. 
+
+
+5. (True/False): The SIZEOF operator returns the number of bytes in an operand.
+
+
+
+
 4.4.5 Section Review, Questions 4,5
+
+
+4. (True/False): The following is an indexed operand: array[esi]
+
+
+5. Fill in the requested register values on the right side of the following instruction sequence:
+mov esi,OFFSET myBytes 
+mov al,[esi] ; a. AL = 
+mov al,[esi+3] ; b. AL = 
+mov esi,OFFSET myWords + 2 
+mov ax,[esi] ; c. AX = 
+mov edi,8 
+mov edx,[myDoubles + edi] ; d. EDX = 
+mov edx,myDoubles[edi] ; e. EDX = 
+mov ebx,myPointer mov eax,[ebx+4] ; f. EAX =
+
+
+
 4.10 Programming Exercises, Question 7
+
+
+7. Copy a String in Reverse Order Write a program with a loop and indirect addressing that copies a string from source to target, reversing the character order in the process. Use the following variables:
+source BYTE "This is the source string",0 
+target BYTE SIZEOF source DUP('#')
