@@ -1,0 +1,40 @@
+; Chapter 5 Programming Exercise 10
+
+.386
+.model flat,stdcall
+.stack 4096
+ExitProcess proto,dwExitCode:dword
+
+include Irvine32.inc
+
+.data 
+N = 47
+
+.code 
+main proc
+
+	mov ecx, N
+	sub ecx, 1
+	mov eax, 1
+	mov ebx, 0
+	call Fibonacci
+
+	invoke ExitProcess,0
+main endp
+
+Fibonacci proc
+L1:
+	mov edx, eax
+	add eax, ebx
+	call WriteDec
+	push eax
+	mov ebx, edx
+	.if ecx > 1
+	mov al, ","
+	call WriteChar
+	.endif
+	pop eax
+	loop L1
+Fibonacci endp
+
+end main
