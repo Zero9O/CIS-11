@@ -23,7 +23,7 @@
   eax
 
 5. In the AddTwo program, which statement halts the program?
-  INVOKE ExitProcess,0 
+  ExitProcess
 
 
 
