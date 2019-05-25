@@ -1,0 +1,49 @@
+; Chapter 5 Programming Exercise 7
+
+.386
+.model flat,stdcall
+.stack 4096
+ExitProcess proto,dwExitCode:dword
+
+include Irvine32.inc
+
+.data
+rows BYTE ?
+cols BYTE ?
+randX DWORD ?
+randY DWORD ?
+
+.code
+main proc
+	call GetMaxXY
+	mov rows, al		;get max x
+	
+	mov cols, dl		;get max y
+	
+	mov ecx, 100
+	STARTLOOP:	; loop 100 times
+
+		movzx eax, cols		;get random x
+		call RandomRange
+		mov randX, eax
+		movzx eax, rows		;get random y
+		call RandomRange
+		mov randY, eax
+
+		;print charactr at x,y
+		mov dh, BYTE PTR randY
+		mov dl, BYTE PTR randX
+		call Gotoxy
+		mov al, 'X'
+		call WriteChar
+
+		;delay 100ms
+		mov eax, 100
+		call Delay
+	loop STARTLOOP	;end loop
+
+
+
+	invoke ExitProcess,0
+main endp
+end main 
