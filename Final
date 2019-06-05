@@ -1,0 +1,66 @@
+; Final Assignment
+
+.386
+.model flat,stdcall
+.stack 4096
+ExitProcess proto,dwExitCode:dword
+
+include Irvine32.inc
+
+.data
+array QWORD 5, 3, 7, 2, 1, 4, 9, 6, 8, 0
+
+.code
+main proc
+	mov ecx, LENGTHOF array
+	mov esi, OFFSET array
+	call Print
+	
+	mov ecx, LENGTHOF array
+	mov esi, OFFSET array
+	call BubbleSort
+	
+	mov ecx, LENGTHOF array
+	mov esi, OFFSET array
+	call Print
+
+	invoke ExitProcess,0
+main endp
+
+Print proc
+	PrintLoop:
+		mov eax, [esi]
+		call WriteDec
+		mov al, ','
+		call WriteChar
+		add esi, 8
+	loop PrintLoop
+	call Crlf
+	ret
+Print endp
+
+BubbleSort proc
+	L1:
+		push ecx
+		push esi
+
+		mov ecx, LENGTHOF array - 1
+		mov esi, OFFSET array
+		L2:
+			mov eax, [esi]
+			cmp eax, [esi + 8]
+			jle skip
+			xchg eax, [esi + 8]
+			mov [esi], eax
+			skip:
+			add esi, 8
+		loop L2
+
+		pop esi
+		pop ecx
+		add esi, 8
+	loop L1
+	ret
+BubbleSort endp
+
+end main
